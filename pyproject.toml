@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "sometable"
+version = "0.1.0"
+description = ""
+authors = ["Vasyl Boliukh <89039235+Vskesha@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.27"
+fastapi = "^0.110.0"
+pydantic = {extras = ["email"], version = "^2.6.3"}
+pydantic-settings = "^2.2.1"
+uvicorn = {extras = ["standard"], version = "^0.27.1"}
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.13.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
